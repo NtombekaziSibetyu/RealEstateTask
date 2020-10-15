@@ -36,7 +36,8 @@
 <div class="jumbotron" style="display: flex;justify-content: center; align-items: center;">
     <div class="inner-container center">
       <h2 class="text-center" >Find your Property</h2>
-      <div class="dropdown-container">
+      <!--dropdown div-->
+      <div class="dropdown-container-center">
         <select class="browser-default custom-select dropdown" id="status" >
           <option selected>Status</option>
           <option value="For rent">For rent</option>
@@ -64,10 +65,12 @@
         </select>
         <button class="btn-dark btn-center" onclick="search()">Search</button>
       </div>
-        
+        <!--end of dropdowns-->
     </div>
 </div>
+<!--filtered cards div-->
 <div class="cards" id="properties"></div>
+<!--script file-->
     <script src="/src/js/data.js"></script>
 </body>
 </html>

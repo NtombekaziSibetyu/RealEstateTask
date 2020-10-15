@@ -6,8 +6,7 @@ let places = [
     location: "Paarl",
     price: 1000,
     bedrooms: 1,
-   
-    status: "For rent",
+    status: "For rent",size: "100sqm"
   },
   {
     image: "https://www.investopedia.com/thmb/7GOsX_NmY3KrIYoZPWOu6SldNFI=/735x0/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
@@ -17,6 +16,7 @@ let places = [
     bedrooms: 2,
     bathrooms: 2,
     status: "For sale",
+    size: "250sqm"
   },
   {
     image: "https://assets1.biggerpockets.com/uploads/wordpress_blog_post/image/12514/featured_big-suburb-homes.jpg",
@@ -26,6 +26,7 @@ let places = [
     bedrooms: 3,
     bathrooms: 1,
     status: "For rent",
+    size: "300sqm"
   },
   {
     image: "https://lid.zoocdn.com/645/430/c7a891fc78c1eda67433cd5782ff989f7e7e9d37.jpg",
@@ -35,6 +36,7 @@ let places = [
     bedrooms: 4,
     bathrooms: 3,
     status: "For sale",
+    size: "400sqm"
   },
   {
     image: 'https://www.mibor.com/clientuploads/_photos/_6/pexels-photo-1396122.jpeg',
@@ -45,6 +47,7 @@ let places = [
     bedrooms: 3,
     bathrooms: 2,
     status: "For sale",
+    size: "350sqm"
   },
   {
     image: "https://www.investopedia.com/thmb/7GOsX_NmY3KrIYoZPWOu6SldNFI=/735x0/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
@@ -54,6 +57,7 @@ let places = [
     bedrooms: 3,
     baths : 2,
     status: "For rent",
+    size: "300sqm"
   },
   {
     image: "https://www.investopedia.com/thmb/7GOsX_NmY3KrIYoZPWOu6SldNFI=/735x0/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
@@ -63,6 +67,7 @@ let places = [
     bedrooms: 2,
     baths : 1,
     status: "For sale",
+    size: "230sqm"
   },
   {
     image: "https://lid.zoocdn.com/645/430/c7a891fc78c1eda67433cd5782ff989f7e7e9d37.jpg",
@@ -72,6 +77,7 @@ let places = [
     bedrooms: 1,
     baths : 1,
     status: "For rent",
+    size: "200sqm"
   },
   {
     image: "https://www.investopedia.com/thmb/7GOsX_NmY3KrIYoZPWOu6SldNFI=/735x0/houses_and_land-5bfc3326c9e77c0051812eb3.jpg",
@@ -81,6 +87,7 @@ let places = [
     bedrooms: 1,
     baths : 1,
     status: "For rent",
+    size: "250sqm"
   },
 ];
 
@@ -121,22 +128,28 @@ function search() {
         <span class="card-img-overlay">${myPlaces[i].status}</span>
       </div>
         <div class="card-content">
-            <h3>${myPlaces[i].type}</h3>
+            <h4>${myPlaces[i].type}</h4 >
             <ul>
-              <li>${myPlaces[i].location}</li>
+              <li><img src="https://img.icons8.com/dotty/24/000000/marker.png"/>
+              ${myPlaces[i].location}</li>
               <li>
-              <li>Price : R${myPlaces[i].price}</li>
+              <li><img src="https://img.icons8.com/fluent-systems-filled/24/000000/price-tag.png"/>
+              Price : R${myPlaces[i].price}</li>
             </ul>
         </div>
         <div class="card-footer">
             <ul>
-            </li>
-                <li>
-                    ${myPlaces[i].bedrooms} Bedroom
+                <li><img src="https://img.icons8.com/small/24/000000/empty-bed.png"/>
+                    ${myPlaces[i].bedrooms} 
                 </li>
                 <li>
-                    ${myPlaces[i].baths} Bathroom
+                <img src="https://img.icons8.com/dotty/24/000000/shower-and-tub.png"/>                    
+                ${myPlaces[i].baths} 
                 </li>
+                <li>
+                <img src="https://img.icons8.com/ios-glyphs/24/000000/surface.png"/>
+                ${myPlaces[i].size} 
+              </li>
             </ul>   
         </div>
     </div>`;

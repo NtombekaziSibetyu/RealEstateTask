@@ -7,21 +7,23 @@
     background-size: cover;
     background-position: center;
     border-radius: 20px;
+    height: 400px;
 }
 .inner-container{
     background: #0000005b;
     color: #fafafa;
     width: 700px;
-    height: 150px;
-   
+    min-height: 200px;
  }
-.dropdown-container {
-    margin: 30px;
+ .text-center {
+     margin-top: 10px;
+ }
+.dropdown-container-center{
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
 }
  select {
-     margin: 2px;
      max-width: 110px;
      height: fit-content;
  }
@@ -38,8 +40,11 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
+@media screen and (max-width: 360px){
+                               
+}
 .card {
     margin: 10px;
     width: 350px;
@@ -59,9 +64,6 @@
     transition: ease-in-out;
     transform: scaleY(-10);
 }
-.card-content {
-    margin: 5px;
-}
 .title {
     padding: 5px;
 }
@@ -69,20 +71,22 @@
 ul li {
     list-style: none;
     display: inline;
-    justify-content: space-between;
     margin: 0;
     padding: 2px;
 }
 
-span {
+.card-img-overlay {
+    margin: 5px;
     width: max-content;
-    margin: 0;
-    padding: 0;
     height: 5px;
-    border-radius: 20px;
-    background-color: #696969;
+    background-color: #000000;
     color: #fafafa;
+    text-align: justify;
 }
 .card-footer {
     height: 50px;
+    justify-content: space-between;
+}
+ul li img {
+    padding: 10px;
 }
