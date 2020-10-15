@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
+  <!--nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">RealEstate.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,43 +27,47 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    
   </div>
 </nav>
+<!--navbar-->
 
+<!--search container for fil-->
 <div class="jumbotron" style="display: flex;justify-content: center; align-items: center;">
     <div class="inner-container center">
-        <select class="browser-default custom-select dropdown" id="status" onclick="search()">
-            <option selected>Status</option>
-            <option value="For rent">For rent</option>
-            <option value="For sale">For sale</option>
-          </select>
-          <select class="browser-default custom-select dropdown" id="location" onclick="search()">
-            <option selected>Location</option>
-            <option value="Constantia">Constantia</option>
-            <option value="Rondebosch">Rondebosch</option>
-            <option value="Camps Bay">Camps Bay</option>
-            <option value="Paarl">Paarl</option>
-          </select>
-          <select class="browser-default custom-select dropdown" id="type" onclick="search()">
-            <option selected>All types</option>
-            <option value="Condo">Condo</option>
-            <option value="Villa">Villa</option>
-            <option value="Apartment">Apartment</option>
-            <option value="Estate House">Estate House</option>
-          </select>
-          <select class="browser-default custom-select dropdown" id="bedrooms" onclick="search()">
-            <option selected>Bedrooms</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+      <h2 class="text-center" >Find your Property</h2>
+      <div class="dropdown-container">
+        <select class="browser-default custom-select dropdown" id="status" >
+          <option selected>Status</option>
+          <option value="For rent">For rent</option>
+          <option value="For sale">For sale</option>
+        </select>
+        <select class="browser-default custom-select dropdown" id="location" >
+          <option selected>Location</option>
+          <option value="Constantia">Constantia</option>
+          <option value="Rondebosch">Rondebosch</option>
+          <option value="Camps Bay">Camps Bay</option>
+          <option value="Paarl">Paarl</option>
+        </select>
+        <select class="browser-default custom-select dropdown" id="type" >
+          <option selected>All types</option>
+          <option value="Condo">Condo</option>
+          <option value="Villa">Villa</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Estate House">Estate House</option>
+        </select>
+        <select class="browser-default custom-select dropdown" id="bedrooms" >
+          <option selected>Bedrooms</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <button class="btn-dark btn-center" onclick="search()">Search</button>
+      </div>
+        
     </div>
 </div>
-<div class="cards" id="properties-slider"></div>
+<div class="cards" id="properties"></div>
     <script src="/src/js/data.js"></script>
 </body>
 </html>

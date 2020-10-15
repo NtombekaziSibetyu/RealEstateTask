@@ -1,28 +1,43 @@
- 
+ .navbar-brand {
+     color: darkgoldenrod;
+ }
 .jumbotron {
     background: url(https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    background-position: center;
+    border-radius: 20px;
 }
 .inner-container{
     background: #0000005b;
-    width: 600px;
-    height: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    color: #fafafa;
+    width: 700px;
+    height: 150px;
+   
  }
+.dropdown-container {
+    margin: 30px;
+    display: flex;
+    flex-wrap:wrap;
+}
  select {
-     margin: 5px;
-     padding: 5px;
-     width: 50px;
+     margin: 2px;
+     max-width: 110px;
      height: fit-content;
+ }
+ button {
+     background-color: #000000;
+     color: #fafafa;
+     height:  fit-content;
+     border-radius: 10px;
+ }
+ button :hover {
+     color: darkgoldenrod;
+     border: solid #9a9a9a;
  }
 .cards {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -42,7 +57,10 @@
 }
 .card-img :hover {
     transition: ease-in-out;
-    
+    transform: scaleY(-10);
+}
+.card-content {
+    margin: 5px;
 }
 .title {
     padding: 5px;
@@ -53,21 +71,18 @@ ul li {
     display: inline;
     justify-content: space-between;
     margin: 0;
-    padding: 5px;
+    padding: 2px;
 }
-ul li i {
-    color: red;
-}
-ul li span {
-    width: min-content;
-    border-radius: 10px;
-    padding: 10px;
-    background-color:orange;
+
+span {
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #696969;
+    color: #fafafa;
 }
 .card-footer {
     height: 50px;
-}
-button {
-  margin-left: 30%;
-  display: block;
 }
