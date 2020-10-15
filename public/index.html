@@ -35,26 +35,26 @@
 
 <div class="jumbotron" style="display: flex;justify-content: center; align-items: center;">
     <div class="inner-container center">
-        <select class="browser-default custom-select" id="status" onclick="search()">
+        <select class="browser-default custom-select dropdown" id="status" onclick="search()">
             <option selected>Status</option>
             <option value="For rent">For rent</option>
             <option value="For sale">For sale</option>
           </select>
-          <select class="browser-default custom-select" id="location">
+          <select class="browser-default custom-select dropdown" id="location" onclick="search()">
             <option selected>Location</option>
             <option value="Constantia">Constantia</option>
             <option value="Rondebosch">Rondebosch</option>
             <option value="Camps Bay">Camps Bay</option>
             <option value="Paarl">Paarl</option>
           </select>
-          <select class="browser-default custom-select" id="type">
+          <select class="browser-default custom-select dropdown" id="type" onclick="search()">
             <option selected>All types</option>
             <option value="Condo">Condo</option>
             <option value="Villa">Villa</option>
             <option value="Apartment">Apartment</option>
             <option value="Estate House">Estate House</option>
           </select>
-          <select class="browser-default custom-select" id="bedrooms">
+          <select class="browser-default custom-select dropdown" id="bedrooms" onclick="search()">
             <option selected>Bedrooms</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -62,7 +62,7 @@
           </select>
     </div>
 </div>
-<div id="properties-slider"></div>
+<div class="cards" id="properties-slider"></div>
     <script src="/src/js/data.js"></script>
 </body>
 </html>

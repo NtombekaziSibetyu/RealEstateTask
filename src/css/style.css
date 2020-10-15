@@ -1,9 +1,25 @@
-/* .inner-container{
+ 
+.jumbotron {
+    background: url(https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.inner-container{
     background: #0000005b;
     width: 600px;
     height: 250px;
-} */
-#properties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ select {
+     margin: 5px;
+     padding: 5px;
+     width: 50px;
+     height: fit-content;
+ }
+.cards {
     display: flex;
     flex-wrap: wrap;
 
